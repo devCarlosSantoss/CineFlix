@@ -4,8 +4,7 @@
   "description": "Um aplicativo web para exibir filmes e séries",
   "main": "server.js",
   "scripts": {
-    "test": "npm run dev",
-    "start": "node server.js"
+    "dev": "node server.js"
   },
   "repository": {
     "type": "git",
