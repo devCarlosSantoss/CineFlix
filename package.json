@@ -1,0 +1,21 @@
+{
+  "name": "cineflix",
+  "version": "1.0.0",
+  "description": "Um aplicativo web para exibir filmes e séries",
+  "main": "server.js",
+  "scripts": {
+    "test": "npm run dev",
+    "start": "node server.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/devCarlosSantoss/CineFlix.git"
+  },
+  "author": "Carlos e Ivanildo",
+  "license": "MIT",
+  "homepage": "https://github.com/devCarlosSantoss/CineFlix",
+  "dependencies": {
+    "express": "^4.17.1",
+    "body-parser": "^1.19.0"
+  }
+}
