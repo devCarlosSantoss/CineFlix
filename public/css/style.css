@@ -1,0 +1,39 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Carousel of movie */
+
+/* .carousel-movie {
+    display: flex;
+} */
+
+.imagesCarousel {
+    display: flex;
+    margin: auto;
+    overflow: hidden;
+}
+
+.image{
+    width: 100%;
+    height: 100%;
+    background-size: cover;
+    /* margin-top: 65px; */
+    /* margin-bottom: 100px; */
+    margin-right: 10px;
+    border-radius: 5px;
+    counter-increment: carousel-cell;
+    transition: 0.5s;
+    transform: scale(1);
+}
+
+.image img {
+    height: 350px;
+}
+
+.image.is-selected {
+    z-index: 10;
+    transform: scale(1.5);
+}
