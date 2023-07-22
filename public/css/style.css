@@ -15,30 +15,63 @@ body {
     color: white;
 }
 
+.carouselOfImages{
+    max-width: 1300px;
+    position: relative;
+}
+
+
+.carouselOfImages i {
+    top: 50%;
+    background: white;
+    height: 45px;
+    width: 45px;
+    line-height: 45px;
+    text-align: center;
+    color: black;
+    border-radius: 50%;
+    font-size: 25px;
+    cursor: pointer;
+    position: absolute;
+    transform: translateY(-50%);
+}
+
+.carouselOfImages i:nth-child(2){
+    left: 0;
+}
+
+.carouselOfImages i:last-child{
+    right: 0;
+}
+
 .imagesCarousel {
     display: flex;
     margin: auto;
     overflow: hidden;
+    transition: all .5s linear;
+    scroll-behavior: smooth;
+}
+
+.imagesCarousel.dragging{
+    cursor: grab;
+    scroll-behavior: auto;
+}
+.imagesCarousel.no-transition{
+    scroll-behavior: auto;
+}
+
+.imagesCarousel.dragging img{
+    pointer-events: none;
 }
 
 .image{
-    width: 100%;
-    height: 100%;
+    height: 350px;
     background-size: cover;
+    margin-left: 14px;
     /* margin-top: 65px; */
     /* margin-bottom: 100px; */
     margin-right: 10px;
     border-radius: 5px;
-    counter-increment: carousel-cell;
-    transition: 0.5s;
-    transform: scale(1);
-}
-
-.image img {
-    height: 350px;
-}
-
-.image.is-selected {
-    z-index: 10;
-    transform: scale(1.5);
+    cursor: grab;
+    transition: all .2s ease-in;
 }
