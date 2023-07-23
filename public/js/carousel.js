@@ -3,7 +3,7 @@ const firstImage = carousel.querySelectorAll("img")[0];
 const firstImageOffset = carousel.querySelector("img").offsetWidth;
 let arrowIcons = document.querySelectorAll(".carouselOfImages i");
 let isDragStart = false, prevPageX, prevScrollLeft;
-let firstImgWidth = firstImage.clientWidth + 24;
+let firstImgWidth = firstImage.clientWidth + 20;
 const carouselChildrens = [...carousel.children];
 
 let imagePerView = Math.round(carousel.offsetWidth / firstImageOffset);
