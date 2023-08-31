@@ -29,7 +29,7 @@ const port = 3000;
 app.get('/filmes-em-exibicao', async (req, res) => {
   try {
     const apiURL = 'https://api.themoviedb.org/3/movie/now_playing?language=pt-BR&page=1&sort_by=popularity.desc';
-    const apiKey = 'sua_chave_de_api_do_tmdb'; // Substitua pela sua chave de API do TMDb
+    const apiKey = 'c62f25f1f1d24cc88e2a912b1b4a560c'; // Substitua pela sua chave de API do TMDb
 
     const response = await axios.get(`${apiURL}&api_key=${apiKey}`);
     const filmes = response.data.results;
